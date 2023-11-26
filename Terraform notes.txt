@@ -14,7 +14,13 @@ Install Terraform extension for VS Code
 Use the Microsoft account, register Azure PaaS
 https://www.microsoftazurepass.com/
 
-test
+Create a new Microsoft account
+Using MS account login GitHub - same Microsoft ID
+Using Microsoft Account Register - Azure Pass. - 100 dollar validity or 1 month which ever comes first, it will be exhausted.
+Using MS account register for the Terraform Cloud
+
+Download and install Terraform CLI - 
+    https://developer.hashicorp.com/terraform/install
 
 Setting up environment variable for the TF
 
