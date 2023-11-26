@@ -14,4 +14,6 @@ Install Terraform extension for VS Code
 Use the Microsoft account, register Azure PaaS
 https://www.microsoftazurepass.com/
 
+test
+
     
