@@ -8,5 +8,10 @@ Download Git for Windows
     https://git-scm.com/download/win
     https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 
+Install Terraform extension for VS Code
+
+
+Use the Microsoft account, register Azure PaaS
+https://www.microsoftazurepass.com/
 
     
