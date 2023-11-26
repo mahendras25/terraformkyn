@@ -16,4 +16,9 @@ https://www.microsoftazurepass.com/
 
 test
 
+Setting up environment variable for the TF
+
+.\test 
+wel
+
     
