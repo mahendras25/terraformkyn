@@ -5,8 +5,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "mpss_myec2" {
-  ami = "ami-00c39f71452c08778"
-  instance_type = "t3.micro"
+    ami = "ami-00c39f71452c08778"
+    instance_type = "t3.micro"
   tags = {
     Name = "MyFirstEC2"
   }
