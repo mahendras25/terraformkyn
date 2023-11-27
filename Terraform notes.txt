@@ -27,4 +27,10 @@ Setting up environment variable for the TF
 .\test 
 wel
 
+
+Day 2
+
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli
+
+
     
