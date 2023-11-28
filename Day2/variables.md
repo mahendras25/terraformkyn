@@ -1,36 +1,28 @@
-## This snippet is from the Terraform Variables 
+# Define variables
 
-### varsdemo.tf
-```sh
-resource "aws_security_group" "var_demo" {
-  name        = "labs-variables"
+variable "aws_region" {
+  description = "The AWS region where resources will be created."
+  type        = string
+  default     = "us-east-1" # Set a default value, or you can leave it unset and provide a value when running Terraform commands.
+}
 
-  ingress {
-    from_port   = 443
-    to_port     = 443
-    protocol    = "tcp"
-    cidr_blocks = [var.vpn_ip]
-  }
+variable "instance_type" {
+  description = "The type of EC2 instance to launch."
+  type        = string
+  default     = "t2.micro"
+}
 
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = [var.vpn_ip]
-  }
-
-  ingress {
-    from_port   = 53
-    to_port     = 53
-    protocol    = "tcp"
-    cidr_blocks = [var.vpn_ip]
+# AWS provider configuration
+provider "aws" {
+  region     = var.aws_region
+  access_key = "XX"
+  secret_key = "YY"
+}
+# EC2 instance resource
+resource "aws_instance" "example" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = var.instance_type
+  tags = {
+    Name = "ExampleInstance"
   }
 }
-```
-### variables.tf 
-
-```sh
-variable "vpn_ip" {
-  default = "116.50.30.50/32"
-}
-```
