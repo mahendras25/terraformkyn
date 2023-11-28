@@ -1,7 +1,10 @@
-GitHub Provider Terraform:
+#### GitHub Provider Terraform:
+
 https://registry.terraform.io/providers/integrations/github/latest/docs
 
 Code Used:
+
+```sh
 
 terraform {
   required_providers {
@@ -23,7 +26,10 @@ resource "github_repository" "example" {
   visibility = "public"
 
 }
-Initialize and Apply:
+```
+#### Initialize and Apply:
+```sh
 terraform init
 terraform plan
 terraform apply
+```
