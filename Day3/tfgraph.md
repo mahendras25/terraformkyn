@@ -2,7 +2,7 @@
 
 ### GraphiViz Documentation Referred in Course:
 
-https://graphviz.gitlab.io/download/
+[https://graphviz.gitlab.io/download/](https://dreampuf.github.io/GraphvizOnline/)
 
 ### graph.tf
 ```sh
@@ -35,6 +35,8 @@ resource "aws_security_group" "allow_tls" {
   }
 }
 ```
+
+Terraform Graph
 
 
 
