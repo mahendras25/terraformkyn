@@ -1,8 +1,11 @@
-This snippet is from the Terraform Graph Video.
-GraphiViz Documentation Referred in Course:
+## This snippet is from the Terraform Graph Video.
+
+### GraphiViz Documentation Referred in Course:
+
 https://graphviz.gitlab.io/download/
 
-graph.tf
+### graph.tf
+```sh
 provider "aws" {
   region     = "us-west-2"
   access_key = "YOUR-ACCESS-KEY"
@@ -31,7 +34,13 @@ resource "aws_security_group" "allow_tls" {
 
   }
 }
-Commands Used:
+```
+
+
+
+### Commands Used:
+```sh
 terraform graph > graph.dot
 yum install graphviz
 cat graph.dot | dot -Tsvg > graph.svg
+```
