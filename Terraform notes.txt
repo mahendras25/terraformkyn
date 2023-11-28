@@ -63,5 +63,5 @@ resource "azurerm_resource_group" "example" {
   location = "West Europe"
 }
 
-
+https://registry.terraform.io/providers/hashicorp/aws/2.42.0/docs/resources/s3_bucket
     
