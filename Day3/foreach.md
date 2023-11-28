@@ -1,4 +1,6 @@
-Example 1 - IAM User
+
+### Example 1 - IAM User
+```sh
 provider "aws" {
   region     = "us-west-2"
   access_key = ""
@@ -9,7 +11,10 @@ resource "aws_iam_user" "iam" {
   for_each = toset( ["user-01","user-02", "user-03"] )
   name     = each.key
 }
-Example 2 - EC2 Instance
+```
+
+### Example 2 - EC2 Instance
+```sh
 resource "aws_instance" "myec2" {
   ami = "ami-0cea098ed2ac54925"
   for_each  = {
@@ -22,3 +27,4 @@ resource "aws_instance" "myec2" {
    Name = each.value
     }
 }
+```
