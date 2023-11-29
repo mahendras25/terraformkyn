@@ -1,3 +1,10 @@
+Terraform Graph switch helps to get the relationship between the resources.
+From the Terraform directory if you run the "Terraform Graph", it generates the output.
+Using the online tool, if you paste the code, you have an option to review and download the Image format of the relationship.
+
+Online tool: URL : https://dreampuf.github.io/GraphvizOnline
+
+
 ## This snippet is from the Terraform Graph Video.
 
 ### GraphiViz Documentation Referred in Course:
