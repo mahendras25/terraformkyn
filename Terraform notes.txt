@@ -27,4 +27,78 @@ Setting up environment variable for the TF
 .\test 
 wel
 
+
+Day 2
+
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli
+
+install Azure CLI
+https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
+
+
+az login
+
+# We strongly recommend using the required_providers block to set the
+# Azure Provider source and version being used
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=3.0.0"
+    }
+  }
+}
+
+# Configure the Microsoft Azure Provider
+provider "azurerm" {
+  features {}
+
+  subscription_id = "00000000-0000-0000-0000-000000000000"
+  tenant_id       = "11111111-1111-1111-1111-111111111111"
+}
+
+
+resource "azurerm_resource_group" "example" {
+  name     = "example"
+  location = "West Europe"
+}
+
+https://registry.terraform.io/providers/hashicorp/aws/2.42.0/docs/resources/s3_bucket
+
+
+resource "aws_eip" "lb" {
+  domain   = "vpc"
+}
+
+
+resource "aws_eip" "lb2" {
+  domain   = "vpc"
+}
+
+
+resource "aws_security_group" "allow_tls" {
+  name        = "allow_tls"
+  description = "Allow TLS inbound traffic"
+
+
+  ingress {
+    description      = "TLS from VPC"
+    from_port        = 443
+    to_port          = 443
+    protocol         = "tcp"
+    cidr_blocks      = ["${aws_eip.lb.public_ip}/32"]
+  }
+
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
+  tags = {
+    Name = "allow_tls"
+  }
+}
     
