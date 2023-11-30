@@ -1,3 +1,8 @@
+Lab steps :
+
+1) Create workspace of qa,uat,prod
+2) Change to the qa
+
 ### Terraform Workspace commands:
 ```sh
 terraform workspace -h
