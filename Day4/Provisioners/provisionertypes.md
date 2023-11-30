@@ -2,7 +2,7 @@
 
 Make sure to have the ec2-key.pem file present in the working directory for the provisioner to be able to connect to the instance.
 
-### Demo Code Used During Demo:
+
 
 
 ```sh
