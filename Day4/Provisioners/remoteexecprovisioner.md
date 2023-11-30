@@ -20,7 +20,7 @@ Now, we are going to simulate the same thing using the remote exec provisioner.
 4) Connect the machine with SSH, see the success
 5) Further execute terraform init plan and apply to install nginx with remote exec provisioner.
 
-
+ssh -i vmkey.pem ec2-user@
 
 ### Documentation Referenced:
 
