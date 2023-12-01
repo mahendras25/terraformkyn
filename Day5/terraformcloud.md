@@ -1,3 +1,5 @@
+https://app.terraform.io/app/getting-started
+
 Steps Terraform cloud and VS Code repo setup
 
 VS Code - Github setup
