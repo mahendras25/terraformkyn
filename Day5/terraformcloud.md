@@ -1,3 +1,5 @@
+https://app.terraform.io/app/getting-started
+
 Steps Terraform cloud and VS Code repo setup
 
 VS Code - Github setup
@@ -27,7 +29,15 @@ TF CLoud CLI flow.
 
 
 
+Set AWS Access Key in Terraform Cloud:
 
+Log in to Terraform Cloud.
+Open the workspace where you want to configure AWS credentials.
+In the workspace, go to "Settings" > "Variables."
+Add a new environment variable named AWS_ACCESS_KEY_ID and set its value to the AWS access key you created.
+Set AWS Secret Key in Terraform Cloud:
+
+Still in the Terraform Cloud workspace settings, add another environment variable named AWS_SECRET_ACCESS_KEY and set its value to the corresponding secret key of the AWS access key.
 
 
 
