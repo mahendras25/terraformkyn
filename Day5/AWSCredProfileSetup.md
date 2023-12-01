@@ -12,7 +12,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 
 
-
+AWS Configure --profile myprofile
 
 Step 1: Install AWS CLI
 Install the AWS CLI on your machine. You can follow the instructions provided in the AWS CLI User Guide for your operating system.
