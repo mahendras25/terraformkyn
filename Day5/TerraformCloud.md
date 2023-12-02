@@ -1,3 +1,13 @@
+Create an Terraform Cloud account
+Create an Oranization (kynddayXXXXX)
+Select version control workflow
+Select Github
+
+
+
+kyndday5
+
+
 ### Documentation Referred:
 
 https://www.terraform.io/language/settings/backends/remote
